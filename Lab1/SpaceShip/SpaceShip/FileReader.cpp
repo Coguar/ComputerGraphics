@@ -1,6 +1,8 @@
 #include "stdafx.h"
 #include "FileReader.h"
 #include <algorithm>
+#include <boost/range/algorithm.hpp>
+
 namespace
 {
 	glm::vec2 RotateItemsPoint(float angle, float x, float y)
@@ -12,8 +14,7 @@ namespace
 
 	float StringToFloat(std::string const& str)
 	{
-		float number = std::strtof(str.c_str(), nullptr);
-		return number;
+		return std::strtof(str.c_str(), nullptr);
 	}
 }
 
@@ -72,10 +73,15 @@ CItem CFileReader::InitCircle(boost::property_tree::ptree & pt)
 
 	//TO DO replace BOOST_FOREACH
 	//*std transform / boost transform with std::back_inserter
+#if 0
 	for (auto &it : pt.get_child("color"))
 	{
 		color.push_back(StringToFloat(it.second.data()));
 	}
+#endif
+	boost::transform(pt.get_child("color"), std::back_inserter(color), [](const auto &component) {
+		return StringToFloat(component.second.data());
+	});
 
 	item.SetColor({ color[0], color[1], color[2], color[3] });
 	float rx = 0;
