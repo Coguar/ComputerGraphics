@@ -1,4 +1,4 @@
-#include "libchapter2_private.h"
+#include "stdafx.h"
 #include "FilesystemUtils.h"
 #include <boost/filesystem/operations.hpp>
 #include <fstream>

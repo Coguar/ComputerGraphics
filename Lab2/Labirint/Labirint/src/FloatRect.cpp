@@ -1,4 +1,4 @@
-#include "libchapter2_private.h"
+#include "stdafx.h"
 #include "FloatRect.h"
 
 CFloatRect::CFloatRect(const glm::vec2 &topLeft, const glm::vec2 &bottomRight)

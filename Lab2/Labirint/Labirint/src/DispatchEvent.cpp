@@ -1,4 +1,4 @@
-#include "libchapter2_private.h"
+#include "stdafx.h"
 #include "DispatchEvent.h"
 
 namespace

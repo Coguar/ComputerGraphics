@@ -1,4 +1,4 @@
-﻿#include "libchapter2_private.h"
+﻿#include "stdafx.h"
 #include "Utils.h"
 #include <SDL2/SDL.h>
 #include <iostream>
@@ -13,6 +13,7 @@ void CUtils::InitOnceSDL2()
 	static bool didInit = false;
 	if (!didInit)
 	{
+		didInit = true;
 		const int status = SDL_Init(SDL_INIT_EVERYTHING);
 		if (status != 0)
 		{

@@ -1,4 +1,4 @@
-#include "libchapter2_private.h"
+#include "stdafx.h"
 #include "Texture2D.h"
 #include "tinyxml2.h"
 #include "FilesystemUtils.h"

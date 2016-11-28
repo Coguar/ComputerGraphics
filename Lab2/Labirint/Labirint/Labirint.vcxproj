@@ -71,6 +71,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -83,16 +84,18 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Create</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\sdk\Box2D;C:\Users\Степан\Documents\Visual Studio 2015\Projects\CG\Lab2\Labirint\Labirint;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>OpenAL32.lib;SDL2main.lib;SDL2.lib;glew32.lib;OpenGL32.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>common.lib;alut.lib;OpenAL32.lib;SDL2main.lib;SDL2.lib;glew32.lib;OpenGL32.lib;SDL2_image.lib;Box2d.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\sdk\Box2D\lib;D:\sdk\OpenAL\include;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -117,12 +120,15 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\sdk\Box2D_r</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\sdk\Box2D_r\lib;D:\sdk\OpenAL\libs\Release32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>common.lib;alut.lib;OpenAL32.lib;SDL2main.lib;SDL2.lib;glew32.lib;OpenGL32.lib;SDL2_image.lib;Box2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -148,12 +154,18 @@
   <ItemGroup>
     <ClInclude Include="Decorators.h" />
     <ClInclude Include="IBody.h" />
-    <ClInclude Include="IdentityCube.h" />
-    <ClInclude Include="IdentitySphere.h" />
+    <ClInclude Include="Labirint.h" />
     <ClInclude Include="libchapter2.h" />
     <ClInclude Include="Lights.h" />
     <ClInclude Include="MeshP3NT2.h" />
-    <ClInclude Include="Skybox.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="RandomSoundPlayer.h" />
+    <ClInclude Include="SoundSource.h" />
+    <ClInclude Include="src1\libchapter3_private.h" />
+    <ClInclude Include="src1\ProgramInfo.h" />
+    <ClInclude Include="src1\ProgramUniform.h" />
+    <ClInclude Include="src1\ShaderProgram.h" />
+    <ClInclude Include="src1\VertexAttribute.h" />
     <ClInclude Include="src\AbstractWindow.h" />
     <ClInclude Include="src\Camera.h" />
     <ClInclude Include="src\DispatchEvent.h" />
@@ -163,18 +175,25 @@
     <ClInclude Include="src\Texture2D.h" />
     <ClInclude Include="src\tinyxml2.h" />
     <ClInclude Include="src\Utils.h" />
+    <ClInclude Include="src\Vector3D.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Wall.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Decorators.cpp" />
-    <ClCompile Include="IdentityCube.cpp" />
-    <ClCompile Include="IdentitySphere.cpp" />
+    <ClCompile Include="Labirint.cpp" />
     <ClCompile Include="Lights.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MeshP3NT2.cpp" />
-    <ClCompile Include="Skybox.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="RandomSoundPlayer.cpp" />
+    <ClCompile Include="SoundSource.cpp" />
+    <ClCompile Include="src1\ProgramInfo.cpp" />
+    <ClCompile Include="src1\ProgramUniform.cpp" />
+    <ClCompile Include="src1\ShaderProgram.cpp" />
+    <ClCompile Include="src1\VertexAttribute.cpp" />
     <ClCompile Include="src\AbstractWindow.cpp" />
     <ClCompile Include="src\Camera.cpp" />
     <ClCompile Include="src\DispatchEvent.cpp" />
@@ -183,7 +202,9 @@
     <ClCompile Include="src\Texture2D.cpp" />
     <ClCompile Include="src\tinyxml2.cpp" />
     <ClCompile Include="src\Utils.cpp" />
+    <ClCompile Include="src\Vector3D.cpp" />
     <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Wall.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

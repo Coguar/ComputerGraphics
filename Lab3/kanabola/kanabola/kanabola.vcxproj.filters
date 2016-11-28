@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\3part">
+      <UniqueIdentifier>{4ac91874-9ac5-4949-aa92-e69e69915ea4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{84524b26-c745-4515-a5ff-0fbedcf401cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TwistValueController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libchapter3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WhitneyUmbrella.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd_party\tinyxml2.h">
+      <Filter>Source Files\3part</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AbstractWindowClient.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ArrayObject.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BufferObject.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Camera.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FilesystemUtils.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FloatRect.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libchapter3_private.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Lights.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ProgramInfo.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ProgramUniform.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ShaderProgram.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture2D.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utils.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexAttribute.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Window.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TwistValueController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WhitneyUmbrella.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3rd_party\tinyxml2.cpp">
+      <Filter>Source Files\3part</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AbstractWindowClient.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ArrayObject.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BufferObject.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Camera.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FilesystemUtils.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FloatRect.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Lights.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ProgramInfo.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ProgramUniform.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ShaderProgram.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture2D.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexAttribute.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Window.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

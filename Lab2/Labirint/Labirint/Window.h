@@ -2,9 +2,11 @@
 #include "libchapter2.h"
 #include "IBody.h"
 #include "Lights.h"
-#include "Skybox.h"
-#include "Decorators.h"
 #include <vector>
+#include "Labirint.h"
+#include "RandomSoundPlayer.h"
+#include "Player.h"
+#include "src1/ShaderProgram.h"
 
 class CWindow : public CAbstractInputControlWindow
 {
@@ -21,13 +23,26 @@ protected:
     void OnKeyDown(const SDL_KeyboardEvent &) override;
     void OnKeyUp(const SDL_KeyboardEvent &) override;
 
+	void OnDragMotion(const glm::vec2 &pos) override;
+	void OnDragBegin(const glm::vec2 &pos) override;
+	void OnDragEnd(const glm::vec2 &pos) override;
 private:
     void SetupView(const glm::ivec2 &size);
 
+	CPlayer m_player;
+
     CPhongModelMaterial m_material;
-    CTexture2DUniquePtr m_pEarthTexture;
-    CAnimatedDecorator m_decoratedSphere;
-    std::unique_ptr<CSkybox> m_pSkybox;
+
+	CTexture2DUniquePtr m_pWallTexture;
+	CWall				m_wall;
+	CLabirint m_labirint;
     CCamera m_camera;
-    CDirectedLightSource m_sunlight;
+	CSpotlightSource m_lamp;
+	b2World m_phisicsWorld;
+
+	CSoundSource m_stepsSource;
+	CRandomSoundPlayer m_randomSoundPlayer;
+	CSoundSource m_scarySource;
+
+	CShaderProgram m_phongFrag;
 };

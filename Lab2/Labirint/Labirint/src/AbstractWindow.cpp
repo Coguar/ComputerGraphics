@@ -1,4 +1,4 @@
-#include "libchapter2_private.h"
+#include "stdafx.h"
 #include "AbstractWindow.h"
 #include "Utils.h"
 #include <SDL2/SDL_video.h>

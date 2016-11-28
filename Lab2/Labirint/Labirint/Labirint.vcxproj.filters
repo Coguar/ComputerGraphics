@@ -16,6 +16,12 @@
     <Filter Include="Source Files\src">
       <UniqueIdentifier>{a53d3e57-9d0d-4774-9c43-a3d6dc24ea32}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\sound">
+      <UniqueIdentifier>{2d18ae43-8324-46d7-bdf7-6e7f9efc40a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\src1">
+      <UniqueIdentifier>{43d96cd4-f734-40f4-90b2-a19ae93e1c91}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -27,19 +33,10 @@
     <ClInclude Include="Decorators.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="IdentityCube.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IdentitySphere.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Lights.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MeshP3NT2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Skybox.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
@@ -81,15 +78,42 @@
     <ClInclude Include="libchapter2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Wall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Labirint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector3D.h">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundSource.h">
+      <Filter>Header Files\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomSoundPlayer.h">
+      <Filter>Header Files\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="src1\ShaderProgram.h">
+      <Filter>Source Files\src1</Filter>
+    </ClInclude>
+    <ClInclude Include="src1\libchapter3_private.h">
+      <Filter>Source Files\src1</Filter>
+    </ClInclude>
+    <ClInclude Include="src1\ProgramInfo.h">
+      <Filter>Source Files\src1</Filter>
+    </ClInclude>
+    <ClInclude Include="src1\ProgramUniform.h">
+      <Filter>Source Files\src1</Filter>
+    </ClInclude>
+    <ClInclude Include="src1\VertexAttribute.h">
+      <Filter>Source Files\src1</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Decorators.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IdentityCube.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="IdentitySphere.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Lights.cpp">
@@ -99,9 +123,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MeshP3NT2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Skybox.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
@@ -133,6 +154,36 @@
     </ClCompile>
     <ClCompile Include="src\Utils.cpp">
       <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Labirint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector3D.cpp">
+      <Filter>Source Files\src</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundSource.cpp">
+      <Filter>Header Files\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="RandomSoundPlayer.cpp">
+      <Filter>Header Files\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src1\ShaderProgram.cpp">
+      <Filter>Source Files\src1</Filter>
+    </ClCompile>
+    <ClCompile Include="src1\ProgramInfo.cpp">
+      <Filter>Source Files\src1</Filter>
+    </ClCompile>
+    <ClCompile Include="src1\ProgramUniform.cpp">
+      <Filter>Source Files\src1</Filter>
+    </ClCompile>
+    <ClCompile Include="src1\VertexAttribute.cpp">
+      <Filter>Source Files\src1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
